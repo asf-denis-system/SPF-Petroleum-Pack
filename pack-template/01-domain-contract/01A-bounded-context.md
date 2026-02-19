@@ -1,88 +1,36 @@
-# Bounded Context: [Domain Name]
+# Bounded Context: Upstream Petroleum Development
 
 ---
 
-## Domain Name
+## Определение контекста
 
-**[Domain Name]**
+**Название:** Управление состоянием пластовой системы в разработке месторождения
 
-(English: [English Name])
+(English: Reservoir System State Management in Petroleum Field Development)
+
+**Область применимости:** Разработка углеводородных месторождений (нефть, газ) в инженерном масштабе  
+**Тип работы:** Системно-физическое описание (не психология, не организационный менеджмент, не экономика)
 
 ---
 
-## Object of Description
+## Объект описания
 
-**[Object]** as an object of engineering description.
+**Целевая система:** Пласт → скважина → флюиды → энергия → инфраструктура → поток продукции
 
-| Object IS | Object IS NOT |
+| Что это IS | Что это IS NOT |
 |-----------|---------------|
-| Object of description with characteristics | Concrete individual |
-| Carrier of measurable attributes | Subject of teaching |
-| Instance of type | Personality with biography |
+| Система с измеримыми состояниями (давление, насыщение, энергия) | Просто набор скважин |
+| Объект, реагирующий на вмешательства предсказуемо (в среднем) | Чёрный ящик |
+| Носитель физических законов (энергетика, гидродинамика) | Объект управления людьми |
+| Система, стремящаяся к новому равновесию | Статичная система |
+| Объект наблюдения (косвенное, через редкие точки, через шум) | Полностью известная система |
 
 ---
 
-## Scope (What's In)
+## Версия контекста
 
-| Element | Description | Example |
-|---------|-------------|---------|
-| **[Element 1]** | [Description] | [Example] |
-| **[Element 2]** | [Description] | [Example] |
-| **[Element 3]** | [Description] | [Example] |
-
----
-
-## Non-Goals (What's Out)
-
-| Excluded | Reason | Where It Belongs |
-|----------|--------|------------------|
-| [Item 1] | [Reason] | [Location] |
-| [Item 2] | [Reason] | [Location] |
-
----
-
-## Truth Criteria
-
-Assertions in this pack are considered justified if:
-
-| Criterion | Test |
-|----------|------|
-| **Observable indicators** | [Description] |
-| **Verifiable work products** | [Description] |
-| **Distinction test** | [Description] |
-| **SoTA + revision criterion** | [Description] |
-
-**Forbidden**:
-- Assertions without observable indicators
-- Methods without work products
-- SoTA without revision criterion
-
----
-
-## Downstream Note
-
-**[What belongs downstream]** — outside scope of this pack.
-
-| Pack describes | Downstream uses |
-|----------------|-----------------|
-| [What exists] | [How to use/develop] |
-
----
-
-## Key Distinctions
-
-| Distinction | In This Pack |
-|-------------|--------------|
-| [Distinction 1] | [Reference] |
-| [Distinction 2] | [Reference] |
-
----
-
-## Version
-
-| Attribute | Value |
-|-----------|-------|
-| Bounded context version | 1.0.0 |
-| Created | [Date] |
-| Last updated | [Date] |
-| Pack ID | [ID] |
+| Атрибут | Значение |
+|---------|---------|
+| Версия bounded context | 0.1.0 |
+| Создано | 2026-02-19 |
+| Pack ID | upstream-petroleum |
