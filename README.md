@@ -55,27 +55,27 @@
 
 ## Структура pack'а
 
-Pack находится в папке [pack-template/](pack-template/). Структур соответствует SPF требованиям:
+Pack находится в папке [pack/](pack/). Структура соответствует SPF требованиям:
 
 | Раздел | Файл | Что описывает |
 |--------|------|-------------|
-| **1. Domain Contract** | [01-domain-contract/](pack-template/01-domain-contract/) | Ограниченный контекст (что входит/не входит), словарь, ключевые различения |
-| **2. Domain Entities** | [02-domain-entities/](pack-template/02-domain-entities/) | Роли (кто работает), вторые принципы, методики, инструменты |
-| **3. Methods** | [03-methods/](pack-template/03-methods/) | Методы анализа и управления (детальные карточки) |
-| **4. Work Products** | [04-work-products/](pack-template/04-work-products/) | Рабочие продукты: план разработки, матрицы, отчёты |
-| **5. Failure Modes** | [05-failure-modes/](pack-template/05-failure-modes/) | Типовые ошибки: игнорирование принципов → какие последствия |
-| **6. SoTA** | [06-sota/](pack-template/06-sota/) | State of the art: где в мировой практике принципы работают |
-| **7. Map** | [07-map/](pack-template/07-map/) | Граф связей между принципами и методами |
+| **1. Domain Contract** | [01-domain-contract/](pack/01-domain-contract/) | Ограниченный контекст (что входит/не входит), словарь, ключевые различения |
+| **2. Domain Entities** | [02-domain-entities/](pack/02-domain-entities/) | Роли (кто работает), вторые принципы, методики, инструменты |
+| **3. Methods** | [03-methods/](pack/03-methods/) | Методы анализа и управления (детальные карточки) |
+| **4. Work Products** | [04-work-products/](pack/04-work-products/) | Рабочие продукты: план разработки, матрицы, отчёты |
+| **5. Failure Modes** | [05-failure-modes/](pack/05-failure-modes/) | Типовые ошибки: игнорирование принципов → какие последствия |
+| **6. SoTA** | [06-sota/](pack/06-sota/) | State of the art: где в мировой практике принципы работают |
+| **7. Map** | [07-map/](pack/07-map/) | Граф связей между принципами и методами |
 
 ### Быстрый старт
 
 Начните раз:
 
-1. **Поймите контекст:** [pack-template/01-domain-contract/01A-bounded-context.md](pack-template/01-domain-contract/01A-bounded-context.md)
-2. **Изучите основные различения:** [pack-template/01-domain-contract/01B-distinctions.md](pack-template/01-domain-contract/01B-distinctions.md)
-3. **Прочитайте вторые принципы:** [pack-template/02-domain-entities/02B-objects-of-attention.md](pack-template/02-domain-entities/02B-objects-of-attention.md)
-4. **Смотрите ошибки:** [pack-template/05-failure-modes/01-failure-modes-catalog.md](pack-template/05-failure-modes/01-failure-modes-catalog.md)
-5. **Поймите SoTA:** [pack-template/06-sota/01-sota-annotations.md](pack-template/06-sota/01-sota-annotations.md)
+1. **Поймите контекст:** [pack/01-domain-contract/01A-bounded-context.md](pack/01-domain-contract/01A-bounded-context.md)
+2. **Изучите основные различения:** [pack/01-domain-contract/01B-distinctions.md](pack/01-domain-contract/01B-distinctions.md)
+3. **Прочитайте вторые принципы:** [pack/02-domain-entities/02B-objects-of-attention.md](pack/02-domain-entities/02B-objects-of-attention.md)
+4. **Смотрите ошибки:** [pack/05-failure-modes/01-failure-modes-catalog.md](pack/05-failure-modes/01-failure-modes-catalog.md)
+5. **Поймите SoTA:** [pack/06-sota/01-sota-annotations.md](pack/06-sota/01-sota-annotations.md)
 
 ---
 
@@ -150,12 +150,10 @@ SPF **универсален по форме и процессу**, но **не 
 | [spf-ecosystem-pack](https://github.com/TserenTserenov/spf-ecosystem-pack) | Pack | Область экосистемы |
 | [spf-digital-platform-pack](https://github.com/TserenTserenov/spf-digital-platform-pack) | Pack | Область ИТ-платформы |
 
-## Как начать создавать pack
+## Зависимости (framework)
 
-1. Изучите [концептуальную модель](docs/conceptual-model.md)
-2. Следуйте [процессу](process/README.md)
-3. Используйте [шаблон pack](pack-template/)
-4. Проверяйте [lint](process/process-lint.md)
+Формат, требования к структуре и процессные проверки (lint/spec) находятся в SPF framework:
+- https://github.com/asf-denis-system/SPF-Petroleum
 
 ---
 
